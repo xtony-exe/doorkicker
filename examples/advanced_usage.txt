@@ -1,0 +1,28 @@
+# Complete scan with all options
+./doorkicker.py -u https://vulnerable-site.com \
+  -w /usr/share/wordlists/dirb/big.txt \
+  -x php,html,js,json,xml \
+  -t 150 \
+  --timeout 20 \
+  --delay 0.1 \
+  --user-agent "Mozilla/5.0 (Custom Agent)" \
+  --no-redirects \
+  --verbose \
+  -o full_scan_results.txt
+
+# Through proxy (Burp Suite)
+./doorkicker.py -u https://target.com \
+  -w wordlists/common.txt \
+  --proxy http://127.0.0.1:8080 \
+  --verbose
+
+# Through Tor
+./doorkicker.py -u http://onion-site.onion \
+  -w wordlists/common.txt \
+  --proxy socks5://127.0.0.1:9050
+
+# Show all responses including 404
+./doorkicker.py -u https://target.com --show-all
+
+# Skip common paths
+./doorkicker.py -u https://target.com --no-common
