@@ -1,0 +1,14 @@
+# Basic scan
+./doorkicker.py -u https://example.com
+
+# With wordlist
+./doorkicker.py -u http://192.168.1.100 -w wordlists/common.txt
+
+# Save results
+./doorkicker.py -u https://target.com -o results.txt
+
+# High performance
+./doorkicker.py -u https://target.com -t 100 --timeout 15
+
+# With extensions
+./doorkicker.py -u http://target.com -x php,html,js
