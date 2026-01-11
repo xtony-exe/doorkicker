@@ -11,9 +11,7 @@ A high-speed directory and file brute forcer written in Python with asyncio.
 - 🔧 **Extensible** with custom wordlists and extensions
 - 📊 **Real-time statistics** and progress tracking
 - 💾 **Auto-save** results to file
-- 🛡️ **Graceful shutdown** with Ctrl+C
 - 🌐 **Proxy support** (HTTP/HTTPS/SOCKS5)
-- 🔄 **Redirect following** (optional)
 
 ## Installation
 
